@@ -228,7 +228,7 @@ footer a:hover{color:var(--accent-2)}
     <div class="wrap">
       <p class="cell-label">In [2]: <b>projects.list()</b></p>
       <h2 id="work-h">Things I've Built</h2>
-      <p class="lede">Three projects, each with the story behind it. Open a card to read why I built it and what I learned.</p>
+      <p class="lede">Projects from research, internships and my own time, each with the story behind it. Open a card to read why I built it and what I learned.</p>
       <div class="grid" id="projectGrid"></div>
     </div>
   </section>
@@ -247,6 +247,29 @@ footer a:hover{color:var(--accent-2)}
             <li>Combined Apache Airflow for orchestrating data workflows with LangGraph for the question-answering flow.</li>
             <li>Explored querying CSV and Excel files and other available datasets through natural language questions.</li>
             <li>Focused on making data easier to explore for people who don't write code.</li>
+            <li>Developed backend services and AI-assisted workflows using Python, SQL and REST APIs.</li>
+            <li>Automated data processing pipelines and contributed to cloud-based applications.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="meta">Summer Research Intern<br>Vellore Institute of Technology, Chennai<br>May 2026 – Jul 2026</div>
+        <div>
+          <h3>Machine learning and generative AI research</h3>
+          <ul>
+            <li>Conducted research in machine learning and generative AI.</li>
+            <li>Implemented data preprocessing, model training, evaluation and technical documentation.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="meta">Generative AI Intern<br>IBM · Adroit Technologies<br>May 2025 – Jul 2025</div>
+        <div>
+          <h3>LLM applications on IBM watsonx</h3>
+          <ul>
+            <li>Built LLM applications using IBM watsonx with prompt engineering, RAG and evaluation pipelines.</li>
+            <li>Improved model responses through fine-tuning experiments and hallucination reduction.</li>
+            <li>Collaborated with cross-functional teams to prototype AI solutions.</li>
           </ul>
         </div>
       </div>
@@ -399,6 +422,52 @@ const PROJECTS = [
       "Key decision": "Separating data orchestration (Airflow) from the reasoning flow (LangGraph), so each part could change without breaking the other.",
       "Challenges": "Connecting different kinds of sources, such as CSV, Excel and other datasets, behind a single natural language interface.",
       "What I learned": "Making data easier to explore is mostly a workflow problem. The language model is only one piece."
+    }
+  },
+  {
+    kind: "ML · Security",
+    title: "Crypto Malware Detection App",
+    summary: "An ML-powered system that classifies malware and the cryptographic algorithms it uses, from disassembled code.",
+    tags: ["Python","Capstone","Scikit-Learn","Flask"],
+    repo: null,
+    story: {
+      "What it does": "Detects malware and classifies the cryptographic algorithms present in a binary.",
+      "Approach": "Disassemble binaries with Capstone, turn the instructions into features, and classify them with Scikit-Learn models.",
+      "How it's used": "A Flask application wraps the model so files can be submitted and classified."
+    }
+  },
+  {
+    kind: "ML · Healthcare",
+    title: "AI for Early Sepsis Detection",
+    summary: "A prediction model for sepsis risk trained on clinical datasets.",
+    tags: ["Python","XGBoost","Deep learning"],
+    repo: null,
+    story: {
+      "What it does": "Predicts sepsis risk from clinical data, with the goal of flagging risk earlier.",
+      "Approach": "Trained and compared XGBoost and deep learning models on clinical datasets."
+    },
+    caution: "Academic project. Not a clinically validated tool."
+  },
+  {
+    kind: "ML · Product",
+    title: "AI Next-Gen Car Rental System",
+    summary: "A rental platform with machine learning models for dynamic pricing and predictive maintenance.",
+    tags: ["Python","Machine learning"],
+    repo: "https://github.com/NeNish/Car-Rental-Systems",
+    story: {
+      "What it does": "Adds intelligence to a car rental platform: pricing that adapts to conditions and maintenance predicted before breakdowns.",
+      "Approach": "Designed machine learning models for dynamic pricing and predictive maintenance."
+    }
+  },
+  {
+    kind: "Full stack",
+    title: "Online Voting System",
+    summary: "A secure voting platform built as a full-stack web application.",
+    tags: ["React","JavaScript","MongoDB"],
+    repo: "https://github.com/NeNish/Online-Voting-System",
+    story: {
+      "What it does": "Lets users cast votes through a web interface, with votes stored securely.",
+      "Approach": "React frontend with a MongoDB database."
     }
   }
 ];
